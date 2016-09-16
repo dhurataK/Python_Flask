@@ -1,0 +1,18 @@
+*{
+  font-family: sans-serif;
+}
+h1{
+  color: darkblue;
+}
+#content{
+  width: 500px;
+}
+#content, img{
+  display: inline-block;
+  vertical-align: top;
+}
+#form input{
+  display: block;
+  margin: 5px 5px;
+
+}
