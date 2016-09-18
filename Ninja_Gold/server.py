@@ -28,7 +28,7 @@ def findGold():
         # print gold_gained_or_lost
         session['gold'] += gold_gained_or_lost # Total gold gained
         activity_result = {
-            'color':('red','green') [gold_gained_or_lost > 0 ],
+            'color':('red','green') [gold_gained_or_lost > 0 ], #NICE USE OF THE TERNARY!
             'activity':('Entered a '+building+' and lost '+str(-(gold_gained_or_lost))+' golds...OUCH! ('+time+')','Earned '+str(gold_gained_or_lost)+' golds from the '+building+'! ('+time+')')[gold_gained_or_lost>0]
         }
         session['activities'].append(activity_result)
