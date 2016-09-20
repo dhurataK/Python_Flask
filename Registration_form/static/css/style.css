@@ -1,0 +1,42 @@
+*{
+  font-family: 'Pacifico', cursive;
+  font-family: 'Acme', sans-serif;
+}
+body{
+  background-image: url('/static/img/bg.jpg');
+}
+#container{
+  margin: 0px auto;
+  width: 970px;
+  padding-left: 30px;
+}
+h1, p{
+  text-align: center;
+}
+  h1 span{
+    color: #d4005e;
+  }
+
+form{
+  margin-left: 275px;
+  margin-top: 65px;
+}
+label{
+    display: inline-block;
+    float: left;
+    clear: left;
+    width: 220px;
+}
+input {
+  display: block;
+}
+#btn{
+  margin-left: 290px;
+  margin-top: 20px;
+}
+.red{
+  color: red;
+}
+.ninja{
+  color: green;
+}

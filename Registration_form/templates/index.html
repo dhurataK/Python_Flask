@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Acme|Pacifico" rel="stylesheet">
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <h1>Register into <span>DevelopHer</span>!</h1>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        {% for msg in messages %}
+          <p class="red">{{ msg }} </p>
+        {% endfor %}
+      {%endif%}
+    {%endwith%}
+    <div id="container">
+      <form action="/process" method="post">
+        <label>First Name: </label>
+        <input type="text" name="first_name" value=""><br>
+        <label>Last Name: </label>
+        <input type="text" name="last_name" value=""><br>
+        <label>Birthday:</label>
+        <input type="text" name="birthday" placeholder="MO/DY/YEAR"/><br>
+        <label>Email: </label>
+        <input type="text" name="email" value=""><br>
+        <label>Password: </label>
+        <input type="text" name="password" value=""><br>
+        <label>Confirm Password: </label>
+        <input type="text" name="confirm_passowrd" value="">
+        <button id="btn">Register</button>
+      </form>
+
+    </div>
+  </body>
+</html>
