@@ -1,0 +1,11 @@
+*{
+  font-family: sans-serif;
+}
+h1{
+  color: darkblue;
+  text-align: center;
+}
+img{
+  display: inline-block;
+  vertical-align: top;
+}
