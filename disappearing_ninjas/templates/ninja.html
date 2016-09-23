@@ -12,8 +12,10 @@
       <img src="{{ url_for('static', filename='img/ninjas/leonardo.jpg') }}" alt="leonardo" />
       <img src="{{ url_for('static', filename='img/ninjas/michelangelo.jpg') }}" alt="michelangelo" />
       <img src="{{ url_for('static', filename='img/ninjas/raphael.jpg') }}" alt="raphael" />
+      {% else %}
+      <img src="/static/img/ninjas/{{ninja}}.jpg" alt="{{ninja}}" />
      {% endif %}
-     <img src="/static/img/ninjas/{{ninja}}.jpg" alt="{{ninja}}" />
+
 
 
   </body>
