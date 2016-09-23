@@ -12,6 +12,11 @@ def ninjas():
 
 @app.route('/ninja/<ninja_color>')
 def dojos(ninja_color):
-    return render_template('ninja.html', ninja = ninja_color)
+    ninjas = {'blue':'leonardo','orange':'michelangelo','red':'raphael', 'purple':'donatello'}
+    if ninja_color in ninjas:
+        ninja = ninjas[ninja_color]
+    else:
+        ninja = 'notapril'
+    return render_template('ninja.html', ninja = ninja)
 
 app.run(debug=True)

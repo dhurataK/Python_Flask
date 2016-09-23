@@ -13,16 +13,8 @@
       <img src="{{ url_for('static', filename='img/ninjas/michelangelo.jpg') }}" alt="michelangelo" />
       <img src="{{ url_for('static', filename='img/ninjas/raphael.jpg') }}" alt="raphael" />
      {% endif %}
-     {% if ninja == 'blue' %}
-         <img src="{{ url_for('static', filename='img/ninjas/leonardo.jpg') }}" alt="leonardo" />
-     {% elif ninja == 'orange' %}
-         <img src="{{ url_for('static', filename='img/ninjas/michelangelo.jpg') }}" alt="michelangelo" />
-     {% elif ninja == 'red' %}
-         <img src="{{ url_for('static', filename='img/ninjas/raphael.jpg') }}" alt="raphael" />
-     {% elif ninja == 'purple' %}
-         <img src="{{ url_for('static', filename='img/ninjas/donatello.jpg') }}" alt="donatello" />
-     {% else %}
-         <img src="{{ url_for('static', filename='img/ninjas/notapril.jpg') }}" alt="Megan Fox" />
-     {% endif %}
+     <img src="/static/img/ninjas/{{ninja}}.jpg" alt="{{ninja}}" />
+
+
   </body>
 </html>
